@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>InClass 01-12-17</title>
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<!-- grey wrapper -->
+	<div id="wrapper">
+		<h1>In Class Work Jquery Auth</h1>
+		<h3>January 12, 2017</h2>
+<!-- end grey wrapper -->
+
+
+<!-- bootstrap form -->
+		<div class="container">
+			<div class="login-page hidden">
+				<h1>Login</h1>
+
+
+				<form>
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Password">
+					</div>
+					<button class="btn btn-warning">Register</button>
+					<input type ="submit" class="btn btn-primary">
+				</form>
+
+			</div>
+			<div class="main-page hidden">
+				<h1>Welcome</h1>
+				<button class="log-out btn btn-info">Log Out</button>
+
+
+				<form>
+					<input type="text" placeholder="toDo">
+					<input type="submit" placeholder="Add toDo">
+				</form>
+
+
+				<ul class="to-do-list">
+				</ul>
+
+
+			</div>
+		</div>
+<!-- end bootstrap form -->
+
+
+<!-- dog animaiton -->
+			<div class="husky">
+			  <div class="mane">
+			    <div class="coat"></div>
+			  </div>
+			  <div class="body">
+			    <div class="head">
+			      <div class="ear"></div>
+			      <div class="ear"></div>
+			      <div class="face">
+			        <div class="eye"></div>
+			        <div class="eye"></div>
+			        <div class="nose"></div>
+			        <div class="mouth">
+			          <div class="lips"></div>
+			          <div class="tongue"></div>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="torso"></div>
+			  </div>
+			  <div class="legs">
+			    <div class="front-legs">
+			      <div class="leg"></div>
+			      <div class="leg"></div>
+			    </div>
+			    <div class="hind-leg">
+			    </div>
+			  </div>
+			  <div class="tail">
+			    <div class="tail">
+			      <div class="tail">
+			        <div class="tail">
+			          <div class="tail">
+			            <div class="tail">
+			              <div class="tail"></div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+			  <defs>
+
+
+			    <filter id="squiggly-0">
+			      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+			      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="2" />
+			    </filter>
+			    <filter id="squiggly-1">
+			      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+			    </filter>
+
+			    <filter id="squiggly-2">
+			      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+			    </filter>
+			    <filter id="squiggly-3">
+			      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+			    </filter>
+
+			    <filter id="squiggly-4">
+			      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+			    </filter>
+			  </defs>
+			</svg>
+<!-- end dog animation -->
+
+
+
+
+	</div>
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/firebase/firebase.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

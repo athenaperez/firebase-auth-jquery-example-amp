@@ -1,0 +1,75 @@
+install for project:
+
+-bootstrap
+-jquery
+-handlebars
+-font-awesome
+
+how to work with bower
+
+#bower init
+ -creates bower.json file
+ -pre-fills liscense and name, etc
+#press enter all the way through
+#install jquery bootstrap --save
+ -today bootstrap requires jquery
+ - --save adds content to bower.json file
+ -lists out dependencies for the app
+ -lists versions of dependencies
+     -symantic versioning
+       -"^3.1.1"
+       -major, minor, patch
+       -3.1.2 would be a patch level update - fix bugs usually
+       -3.2.2 - minor version - added new features
+       -4.2.2 - major version - 
+       - ^ - i will update to anything from 3.1.1 all the way up to 3.999.999. won't go up to version 4 tho
+       -look up "npm semeantics versioning" for carrot replacement
+       - https://semver.npmjs.com/
+
+-----
+
+FIREBASE AUTHENTICATION
+https://firebase.google.com/docs/auth/
+
+-add firebase to your JS project
+https://console.firebase.google.com/
+-in iterm
+1.
+#bower install firebase --save
+#add a script tag on index 
+
+2.
+#enable user on firebase.com: authentication, sign-in method, enable email/password
+
+3.
+--initialize firebase using: (ex)
+  --under authentication, sign-in method, web set up
+#firebase.initializeApp({
+#    apiKey: "AIzaSyCpjV3kTPJEu5FQRPNcetyFxhMI3ia_wKo",
+#    authDomain: "c17-jquery-auth-1852c.firebaseapp.com",
+#    databaseURL: "https://c17-jquery-auth-1852c.firebaseio.com",
+#    storageBucket: "c17-jquery-auth-1852c.appspot.com",
+#    messagingSenderId: "204747812281"
+#  });
+
+
+
+
+adding an email to database-->
+in console:
+#firebase.auth().createUserWithEmailAndPassword('a@b.com', 'abcdefg12')
+--adds the user name and password to authentication, users
+#firebase.auth().currentUser.email
+--
+
+
+1. register
+#firebase.auth().createUserWithEmailAndPassword('d@me.com', '1234565')
+2. sign in
+
+3. sign out
+#firebase.auth().signOut()
+
+
+
+
